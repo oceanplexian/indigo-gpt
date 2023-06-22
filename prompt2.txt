@@ -1,0 +1,15 @@
+Can you turn off the kitchen lights? Reply in JSON. desiredState should be on, off, or none.
+ASSISTANT: 
+{
+  "devices": [
+    {
+      "devicePath": "/devices/Kitchen%20Lights.json",
+      "deviceState": "off",
+      "desiredState": "on"
+    }
+  ],
+  "text": "I've turned off the kitchen lights."}
+USER: 
+{{ .Input}} Reply in JSON. desiredState should be on, off, or none.
+
+{{ .UserPrompt }} 

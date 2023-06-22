@@ -1,0 +1,17 @@
+- Bar Lights (/devices/Bar%20Lights.json),- Kitchen Lights (/devices/Kitchen%20Lights.json)
+Are the kitchen lights on? Reply in JSON.
+
+ASSISTANT: 
+{"devicePaths": ["/devices/Kitchen%20Lights.json"] 
+}
+
+USER:
+Turn the bar lights on. Reply in JSON.
+
+ASSISTANT: 
+{"devicePaths": ["/devices/Bar%20Lights.json"]
+}
+
+USER: 
+{{ .Input }} Reply in JSON.
+{{ .UserPrompt}}
